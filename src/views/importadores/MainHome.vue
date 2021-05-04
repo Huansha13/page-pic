@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container animate__animated animate__slideInUp">
     <div>
       <br> <br>
       <h2 class="title">IMPORTACIONES GRUPALES</h2>
@@ -88,6 +88,7 @@
   <div class="sectioFooter">
     <MainFooter></MainFooter>
   </div>
+  <BtnWhatsaap></BtnWhatsaap>
 </template>
 
 <style lang="scss">
@@ -103,8 +104,10 @@ import Testimonio from "@/views/importadores/Testimonio";
 import Footer from "@/views/importadores/MainFooter";
 import MainFooter from "@/views/importadores/MainFooter";
 import TblImpotaciones from "@/views/importadores/TblImpotaciones";
+import BtnWhatsaap from "@/views/importadores/BtnWhatsaap";
 export default {
   components: {
+    BtnWhatsaap,
     TblImpotaciones,
     MainFooter, Footer, Testimonio, TransmicionesEnVivo, MercanciaTrancito, MercanciaStock, DeseasImportar}
 }

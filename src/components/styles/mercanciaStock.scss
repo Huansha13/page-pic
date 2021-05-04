@@ -109,3 +109,10 @@
     margin-right: 5px;
   }
 }
+
+@media (max-width: 768px) {
+  .img-product img {
+    width: 100%;
+    height: 100% !important;
+  }
+}

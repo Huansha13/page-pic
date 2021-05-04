@@ -1,31 +1,65 @@
 
 @import "../styleMain";
 nav {
-  background: linear-gradient(90deg ,#3c80b4,#0d5084 35%,#0c1924);
+  //background: rgba(21, 37, 89, 0.6);
   padding: 0 25px;
-  height: 80px;
+  background: #272f3e;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 2;
+  width: 100%;
+  position: fixed;
+}
+.nav-banner {
+  width: 100%;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  padding: 70px 20px 20px 20px;
 }
 .logo {
+  .logo-pic {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+}
+.login a {
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
+  border-color: #d8dbeb;
+  box-shadow: none;
+  border-radius: 2px;
+  padding: 4px 15px;
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
   align-items: center;
-  img {
-    width: 128px;
-    height: 38px;
-    margin-left: -10px;
+  transition: all .5s;
+  margin-left: 15px;
+  i {
+    font-size: 20px;
+    margin-right: 5px;
+  }
+  &:hover {
+    background: #ff671f ;
+    color: white;
   }
 }
 .ifo-logo {
-  width: 13em;
-  margin-left: 12px;
-  padding-left: 12px;
-  border-left: 1px solid #ffffff;
+  width: 17em;
   span {
     color: #fff;
-    font-size: 15px;
-    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 12px;
   }
+}
+.redSocial {
+  width: 100%;
+  justify-content: space-between;
+  align-items:center ;
 }
 .redSocial ul, .access-link ul {
   justify-content: flex-end;
@@ -46,11 +80,12 @@ nav {
   }
 }
 .access-link {
-  margin-top: 10px;
+  margin-top: 15px;
   align-items: center;
+  justify-content: center !important;
   ul {
     li {
-      margin-left: 10px;
+      margin-right: 10px;
       padding-left: 10px;
       height: 15px;
       border-left: 1px solid white;
@@ -58,6 +93,7 @@ nav {
       align-items: center;
       &:first-child {
         border-left: none;
+        padding-left: 0;
       }
     }
     a {
@@ -90,10 +126,21 @@ nav {
   align-items: center;
 }
 
-.contatc-paises li a {
-  font-size: 12px;
+.contatc-paises {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+}
+.li-contact {
+  margin-right: 20px;
+}
+.li-contact a, .contatc-paises-r a {
+  font-size: 13px;
   display: flex;
   align-items: center;
+  color: white;
+  text-decoration: none;
   img {
     width: 18px;
     margin-right: 5px;
@@ -109,12 +156,32 @@ nav {
   }
 }
 
+
+.banner {
+  height: 220px;
+  position: relative;
+  .background {
+    background: linear-gradient(to left, #d6690f 0%, #13235b 100%);
+    width: 100%;
+    height: 220px;
+    position: absolute;
+    opacity: .7;
+  }
+  .img-banner {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+}
+
+
+
 @media (max-width: 768px) {
 
   .ifo-logo {
     display: none;
   }
-  .contact-redSocial .contatc-paises {
+  .contatc-paises .contatc-paises {
     display: none !important;
   }
   .access-link {
@@ -128,6 +195,26 @@ nav {
   }
   .menu {
     display: inline;
+    margin-left: 20px;
   }
+  .banner {
+    display: none;
+  }
+
+  .login-r {
+   border: 1px solid #d6690f;
+    padding: 7px 20px;
+    color: #d6690f !important;
+    border-radius: 2px;
+    &:hover {
+      background: #d6690f;
+      color: white !important;
+    }
+  }
+
+  .contatc-paises-r li {
+    margin-right: 25px;
+  }
+
 
 }
