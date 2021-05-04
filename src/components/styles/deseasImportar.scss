@@ -1,0 +1,26 @@
+.wrapper {
+  h3 {
+    font-size: 70px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    color: #ff671f;
+  }
+}
+.di-img {
+  border-radius: 5px;
+}
+
+.row {
+  justify-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+  .di-img {
+    width: 100%;
+    margin-top: 30px;
+  }
+  }

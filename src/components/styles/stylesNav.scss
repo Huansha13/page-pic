@@ -1,0 +1,133 @@
+
+@import "../styleMain";
+nav {
+  background: linear-gradient(90deg ,#3c80b4,#0d5084 35%,#0c1924);
+  padding: 0 25px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  align-items: center;
+  img {
+    width: 128px;
+    height: 38px;
+    margin-left: -10px;
+  }
+}
+.ifo-logo {
+  width: 13em;
+  margin-left: 12px;
+  padding-left: 12px;
+  border-left: 1px solid #ffffff;
+  span {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+  }
+}
+.redSocial ul, .access-link ul {
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.redSocial {
+  ul li {
+    margin-left: 10px;
+  }
+  ul li a {
+    text-decoration: none;
+    color: white;
+    i {
+      font-size: 20px;
+    }
+  }
+}
+.access-link {
+  margin-top: 10px;
+  align-items: center;
+  ul {
+    li {
+      margin-left: 10px;
+      padding-left: 10px;
+      height: 15px;
+      border-left: 1px solid white;
+      display: flex;
+      align-items: center;
+      &:first-child {
+        border-left: none;
+      }
+    }
+    a {
+      color: white;
+      font-size: 13px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      transition: all .5s;
+      i {
+        margin-right: 5px;
+        font-size: 17px;
+      }
+      &:hover {
+        opacity: .7;
+      }
+    }
+  }
+  span {
+    color: white;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+.contact-redSocial {
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+}
+
+.contatc-paises li a {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  img {
+    width: 18px;
+    margin-right: 5px;
+  }
+}
+
+.menu {
+  margin-left: 10px;
+  display: none;
+  i {
+    font-size: 30px;
+    color: white;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .ifo-logo {
+    display: none;
+  }
+  .contact-redSocial .contatc-paises {
+    display: none !important;
+  }
+  .access-link {
+    display: none !important;
+  }
+
+  .logo img {
+    width: 90px;
+    height: 30px;
+    margin-left: -10px;
+  }
+  .menu {
+    display: inline;
+  }
+
+}

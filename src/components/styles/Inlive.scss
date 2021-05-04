@@ -1,0 +1,23 @@
+.box-video {
+  height: 270px;
+}
+.title-Inlive {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  .btn-red {
+    width: 18px;
+    height: 18px;
+    background: red;
+    border-radius: 100000px;
+    margin-right: 10px;
+  }
+  i {
+    margin-right: 10px;
+    font-size:30px ;
+    color: red;
+  }
+}

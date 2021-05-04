@@ -1,0 +1,26 @@
+.title-testimonio {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  i {
+    text-align: center;
+    font-size: 25px;
+  }
+}
+.view-testimonios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 10px 0 ;
+}
+.check {
+  color: #2cb842;
+  i {
+
+    font-size: 20px;
+  }
+}
+.txt-tst {
+  font-size: 14px;
+  margin-left: 5px;
+}
